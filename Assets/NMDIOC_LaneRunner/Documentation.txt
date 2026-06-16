@@ -1,0 +1,25 @@
+﻿1. INTRODUCTION
+The Easy Lane-Based Runner Framework provides a modular, event-driven system to create professional-grade runner games. This framework is designed for performance, flexibility, and easy integration.
+2. TABLE OF CONTENTS
+1. Introduction
+2. System Requirements
+3. Setup Guide
+4. Script Reference
+5. Contact
+3. SYSTEM REQUIREMENTS
+* Unity 2021.3 LTS or higher.
+* Compatible with all platforms (PC, Mobile, Console).
+4. SETUP GUIDE
+1. Import the package into your Unity project.
+2. Drag the "Player" prefab into your scene.
+3. Ensure your ground object has the Tag "Ground" assigned in the Inspector.
+4. Create an empty GameObject, name it "LevelGenerator", and attach the LevelGenerator script.
+5. In the Inspector, assign your preferred Obstacle prefabs (must have the "Obstacle" tag) and Coin prefabs to the list fields.
+6. Press Play to start. Use Left/Right Arrow keys to change lanes and Spacebar to jump.
+5. SCRIPT REFERENCE
+* LaneRunnerController: Handles player movement, jumping, and collision detection. It triggers the "OnPlayerDeath" event upon collision.
+* LevelGenerator: Manages automated spawning of objects based on probability. Listens for the "OnPlayerDeath" event to stop spawning.
+* Coin: Handles item rotation, movement, and collection logic using the "OnCoinCollected" event.
+* MovingObject: Utility component for linear object translation and memory cleanup.
+6. CONTACT
+For support, please contact: nmgames.ecu@gmail.com
